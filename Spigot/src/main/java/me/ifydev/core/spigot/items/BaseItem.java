@@ -13,10 +13,10 @@ import org.bukkit.inventory.ItemStack;
  */
 @AllArgsConstructor
 @RequiredArgsConstructor
-@Getter
 public class BaseItem {
-    private final String name;
-    private final Material material;
+
+    @Getter private final String name;
+    @Getter private final Material material;
     @Setter private int data = 0;
 
     public final ItemStack toItemStack() {
@@ -25,5 +25,9 @@ public class BaseItem {
 
     public final ItemStack toItemStack(int amount) {
         return new ItemStack(material, amount, (short) data);
+    }
+
+    public short getData() {
+        return (short) data;
     }
 }
