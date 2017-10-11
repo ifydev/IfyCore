@@ -590,7 +590,7 @@ public class BlockRegistry {
         registered.add(new BaseItem("Spawn Polar Bear", Material.MONSTER_EGG, 102));
         registered.add(new BaseItem("Spawn Llama", Material.MONSTER_EGG, 103));
         registered.add(new BaseItem("Spawn Villager", Material.MONSTER_EGG, 120));
-        registered.add(new BaseItem("Bottle-O-Enchanting", Material.EXP_BOTTLE));
+        registered.add(new BaseItem("Bottle 'o Enchanting", Material.EXP_BOTTLE));
         registered.add(new BaseItem("Fire Charge", Material.FIREWORK_CHARGE));
         registered.add(new BaseItem("Book and Quill", Material.BOOK_AND_QUILL));
         registered.add(new BaseItem("Written Book", Material.WRITTEN_BOOK));
