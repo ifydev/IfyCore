@@ -1,7 +1,6 @@
 package me.ifydev.core.spigot;
 
-import lombok.Getter;
-import me.ifydev.core.api.CoreAPI;
+import me.ifydev.core.spigot.enchant.EnchantRegistry;
 import me.ifydev.core.spigot.items.BlockRegistry;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -14,6 +13,7 @@ public class Core extends JavaPlugin {
     @Override
     public void onEnable() {
         BlockRegistry.setup();
+        EnchantRegistry.setup();
     }
 
     @Override
