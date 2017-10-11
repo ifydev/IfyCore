@@ -1,7 +1,6 @@
 package me.ifydev.core.spigot.enchant;
 
 import lombok.Getter;
-import me.ifydev.core.spigot.items.BaseItem;
 import org.bukkit.enchantments.Enchantment;
 
 import java.util.ArrayList;
@@ -37,7 +36,7 @@ public class EnchantRegistry {
         enchants.add(new BaseEnchant("Fortune", Enchantment.LOOT_BONUS_BLOCKS));
         enchants.add(new BaseEnchant("Frost Walker", Enchantment.FROST_WALKER));
         enchants.add(new BaseEnchant("Infinity", Enchantment.ARROW_INFINITE));
-        enchants.add(new BaseEnchant("KnockBack", Enchantment.KNOCKBACK));
+        enchants.add(new BaseEnchant("Knockback", Enchantment.KNOCKBACK));
         enchants.add(new BaseEnchant("Looting", Enchantment.LOOT_BONUS_MOBS));
         enchants.add(new BaseEnchant("Luck of the Sea", Enchantment.LUCK));
         enchants.add(new BaseEnchant("Lure", Enchantment.LURE));
