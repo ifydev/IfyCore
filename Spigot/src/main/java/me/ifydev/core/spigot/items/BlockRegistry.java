@@ -184,7 +184,7 @@ public class BlockRegistry {
         registered.add(new BaseItem("Chiseled Stone Brick", Material.SMOOTH_BRICK, 3));
         registered.add(new BaseItem("Brown Mushroom Block", Material.HUGE_MUSHROOM_1));
         registered.add(new BaseItem("Red Mushroom Block", Material.HUGE_MUSHROOM_2));
-        registered.add(new BaseItem("Iron Bars", Material.IRON_BARDING));
+        registered.add(new BaseItem("Iron Bars", Material.IRON_FENCE));
         registered.add(new BaseItem("Glass Pane", Material.THIN_GLASS));
         registered.add(new BaseItem("Melon Block", Material.MELON_BLOCK));
         registered.add(new BaseItem("Vines", Material.VINE));
