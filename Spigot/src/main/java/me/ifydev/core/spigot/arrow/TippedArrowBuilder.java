@@ -25,11 +25,6 @@ public class TippedArrowBuilder {
      * @return a tipped arrow containing all the extra meta
      */
     public ItemStack get() {
-//        ItemStack item = new ItemStack(Material.TIPPED_ARROW);
-//        PotionMeta meta = (PotionMeta) item.getItemMeta();
-//        meta.addCustomEffect(new PotionEffect(type, time * 20, amplifier), true);
-//        item.setItemMeta(meta);
-//        return item;
         ItemStack item = new ItemStack(Material.TIPPED_ARROW);
         PotionMeta meta = (PotionMeta) item.getItemMeta();
         meta.setBasePotionData(new PotionData(type, extended, amplified));
