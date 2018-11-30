@@ -8,8 +8,6 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.PotionMeta;
 import org.bukkit.potion.PotionData;
 
-import java.util.Optional;
-
 /**
  * @author Innectic
  * @since 10/5/2017
@@ -20,7 +18,7 @@ public class BaseItem {
 
     @Getter private final String name;
     @Getter private final Material material;
-    @Getter private Optional<PotionData> potionData;
+    @Getter private PotionData potionData = null;
 
     public final ItemStack toItemStack() {
         return toItemStack(1);
@@ -29,10 +27,11 @@ public class BaseItem {
     public final ItemStack toItemStack(int amount) {
         ItemStack stack = new ItemStack(material, amount);
 
-        potionData.ifPresent(data -> {
+        if (potionData != null) {
             PotionMeta meta = (PotionMeta) stack.getItemMeta();
-            meta.setBasePotionData(data);
-        });
+            meta.setBasePotionData(potionData);
+            stack.setItemMeta(meta);
+        }
         return stack;
     }
 }

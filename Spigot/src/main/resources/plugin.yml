@@ -2,3 +2,4 @@ name: IfyCore
 version: 1.0
 main: me.ifydev.core.spigot.Core
 author: Innectic
+api-version: 1.13
