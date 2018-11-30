@@ -3,41 +3,36 @@ package me.ifydev.core.spigot.items;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import lombok.Setter;
 import org.bukkit.Material;
-import org.bukkit.entity.EntityType;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.SpawnEggMeta;
+import org.bukkit.inventory.meta.PotionMeta;
+import org.bukkit.potion.PotionData;
+
+import java.util.Optional;
 
 /**
  * @author Innectic
  * @since 10/5/2017
  */
-@AllArgsConstructor
 @RequiredArgsConstructor
+@AllArgsConstructor
 public class BaseItem {
 
     @Getter private final String name;
     @Getter private final Material material;
-    @Setter private int data = 0;
+    @Getter private Optional<PotionData> potionData;
 
     public final ItemStack toItemStack() {
         return toItemStack(1);
     }
 
     public final ItemStack toItemStack(int amount) {
-        // HACK: Make llama eggs work...
-        if (material == Material.MONSTER_EGG && data == 103) {
-            ItemStack item = new ItemStack(Material.MONSTER_EGG, amount);
-            SpawnEggMeta meta = (SpawnEggMeta) item.getItemMeta();
-            meta.setSpawnedType(EntityType.LLAMA);
-            item.setItemMeta(meta);
-            return item;
-        }
-        return new ItemStack(material, amount, (short) data);
-    }
+        ItemStack stack = new ItemStack(material, amount);
 
-    public short getData() {
-        return (short) data;
+        potionData.ifPresent(data -> {
+            PotionMeta meta = (PotionMeta) stack.getItemMeta();
+            meta.setBasePotionData(data);
+        });
+        return stack;
     }
 }
