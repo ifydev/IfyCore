@@ -33,6 +33,7 @@ public class EnchantRegistry {
         enchants.add(new BaseEnchant("Fire Aspect", Enchantment.FIRE_ASPECT));
         enchants.add(new BaseEnchant("Fire Protection", Enchantment.PROTECTION_FIRE));
         enchants.add(new BaseEnchant("Flame", Enchantment.ARROW_FIRE));
+        enchants.add(new BaseEnchant("Loyalty", Enchantment.LOYALTY));
         enchants.add(new BaseEnchant("Fortune", Enchantment.LOOT_BONUS_BLOCKS));
         enchants.add(new BaseEnchant("Frost Walker", Enchantment.FROST_WALKER));
         enchants.add(new BaseEnchant("Infinity", Enchantment.ARROW_INFINITE));

@@ -309,6 +309,8 @@ public class BlockRegistry {
         registered.add(new BaseItem("Stone Button", Material.STONE_BUTTON));
         registered.add(new BaseItem("Skeleton Skull", Material.SKELETON_SKULL));
         registered.add(new BaseItem("Anvil", Material.ANVIL));
+        registered.add(new BaseItem("Chipped Anvil", Material.CHIPPED_ANVIL));
+        registered.add(new BaseItem("Damaged Anvil", Material.DAMAGED_ANVIL));
         registered.add(new BaseItem("Trapped Chest", Material.TRAPPED_CHEST));
         registered.add(new BaseItem("Iron Pressure Plate", Material.HEAVY_WEIGHTED_PRESSURE_PLATE));
         registered.add(new BaseItem("Weighted Iron Plate", Material.HEAVY_WEIGHTED_PRESSURE_PLATE));
@@ -895,6 +897,8 @@ public class BlockRegistry {
         registered.add(new BaseItem("Potion of Weakness (Extended)", Material.POTION, new PotionData(PotionType.WEAKNESS, true, false)));
         registered.add(new BaseItem("Potion of Slowness", Material.POTION, new PotionData(PotionType.SLOWNESS, false, false)));
         registered.add(new BaseItem("Potion of Slowness (Extended)", Material.POTION, new PotionData(PotionType.SLOWNESS, true, false)));
+        registered.add(new BaseItem("Potion of Harming", Material.POTION, new PotionData(PotionType.INSTANT_DAMAGE, false, false)));
+        registered.add(new BaseItem("Potion of Harming II", Material.POTION, new PotionData(PotionType.INSTANT_DAMAGE, false, true)));
 
         registered.add(new BaseItem("Splash Potion", Material.SPLASH_POTION));
         registered.add(new BaseItem("Splash Mundane Potion", Material.SPLASH_POTION, new PotionData(PotionType.MUNDANE, false, false)));
@@ -902,30 +906,28 @@ public class BlockRegistry {
         registered.add(new BaseItem("Splash Potion of Regeneration", Material.SPLASH_POTION, new PotionData(PotionType.REGEN, false, false)));
         registered.add(new BaseItem("Splash Potion of Regeneration (Extended)", Material.SPLASH_POTION, new PotionData(PotionType.REGEN, true, false)));
         registered.add(new BaseItem("Splash Potion of Regeneration II", Material.SPLASH_POTION, new PotionData(PotionType.REGEN, false, true)));
-        registered.add(new BaseItem("Splash Potion of Swiftness", Material.POTION, new PotionData(PotionType.SPEED, false, false)));
-        registered.add(new BaseItem("Splash Potion of Swiftness (Extended)", Material.POTION, new PotionData(PotionType.SPEED, true, false)));
-        registered.add(new BaseItem("Splash Potion of Swiftness II", Material.POTION, new PotionData(PotionType.SPEED, false, true)));
-        registered.add(new BaseItem("Splash Potion of Fire Resistance", Material.POTION, new PotionData(PotionType.FIRE_RESISTANCE, false, false)));
-        registered.add(new BaseItem("Splash Potion of Fire Resistance (Extended)", Material.POTION, new PotionData(PotionType.FIRE_RESISTANCE, true, false)));
-        registered.add(new BaseItem("Splash Potion of Healing", Material.POTION, new PotionData(PotionType.INSTANT_HEAL, false, false)));
-        registered.add(new BaseItem("Splash Potion of Healing II", Material.POTION, new PotionData(PotionType.INSTANT_HEAL, false, true)));
-        registered.add(new BaseItem("Splash Potion of Strength", Material.POTION, new PotionData(PotionType.STRENGTH, false, false)));
-        registered.add(new BaseItem("Splash Potion of Strength (Extended)", Material.POTION, new PotionData(PotionType.STRENGTH, true, false)));
-        registered.add(new BaseItem("Splash Potion of Strength II", Material.POTION, new PotionData(PotionType.STRENGTH, false, true)));
-        registered.add(new BaseItem("Splash Potion of Poison", Material.POTION, new PotionData(PotionType.POISON, false, false)));
-        registered.add(new BaseItem("Splash Potion of Poison (Extended)", Material.POTION, new PotionData(PotionType.POISON, true, false)));
-        registered.add(new BaseItem("Splash Potion of Poison II", Material.POTION, new PotionData(PotionType.POISON, false, true)));
-        registered.add(new BaseItem("Splash Potion of Weakness", Material.POTION, new PotionData(PotionType.WEAKNESS, false, false)));
-        registered.add(new BaseItem("Splash Potion of Weakness (Extended)", Material.POTION, new PotionData(PotionType.WEAKNESS, true, false)));
-        registered.add(new BaseItem("Splash Potion of Slowness", Material.POTION, new PotionData(PotionType.SLOWNESS, false, false)));
-        registered.add(new BaseItem("Splash Potion of Slowness (Extended)", Material.POTION, new PotionData(PotionType.SLOWNESS, true, false)));
-        registered.add(new BaseItem("Splash Potion of Water Breathing", Material.POTION, new PotionData(PotionType.WATER_BREATHING, false, false)));
-        registered.add(new BaseItem("Splash Potion of Water Breathing (Extended)", Material.POTION, new PotionData(PotionType.WATER_BREATHING, true, false)));
-        registered.add(new BaseItem("Splash Potion of Leaping", Material.POTION, new PotionData(PotionType.JUMP, false, false)));
-        registered.add(new BaseItem("Splash Potion of Leaping (Extended)", Material.POTION, new PotionData(PotionType.JUMP, true, false)));
-        registered.add(new BaseItem("Splash Potion of Leaping II", Material.POTION, new PotionData(PotionType.JUMP, false, true)));
-        registered.add(new BaseItem("Potion of Harming", Material.POTION, new PotionData(PotionType.INSTANT_DAMAGE, false, false)));
-        registered.add(new BaseItem("Potion of Harming II", Material.POTION, new PotionData(PotionType.INSTANT_DAMAGE, false, true)));
+        registered.add(new BaseItem("Splash Potion of Swiftness", Material.SPLASH_POTION, new PotionData(PotionType.SPEED, false, false)));
+        registered.add(new BaseItem("Splash Potion of Swiftness (Extended)", Material.SPLASH_POTION, new PotionData(PotionType.SPEED, true, false)));
+        registered.add(new BaseItem("Splash Potion of Swiftness II", Material.SPLASH_POTION, new PotionData(PotionType.SPEED, false, true)));
+        registered.add(new BaseItem("Splash Potion of Fire Resistance", Material.SPLASH_POTION, new PotionData(PotionType.FIRE_RESISTANCE, false, false)));
+        registered.add(new BaseItem("Splash Potion of Fire Resistance (Extended)", Material.SPLASH_POTION, new PotionData(PotionType.FIRE_RESISTANCE, true, false)));
+        registered.add(new BaseItem("Splash Potion of Healing", Material.SPLASH_POTION, new PotionData(PotionType.INSTANT_HEAL, false, false)));
+        registered.add(new BaseItem("Splash Potion of Healing II", Material.SPLASH_POTION, new PotionData(PotionType.INSTANT_HEAL, false, true)));
+        registered.add(new BaseItem("Splash Potion of Strength", Material.SPLASH_POTION, new PotionData(PotionType.STRENGTH, false, false)));
+        registered.add(new BaseItem("Splash Potion of Strength (Extended)", Material.SPLASH_POTION, new PotionData(PotionType.STRENGTH, true, false)));
+        registered.add(new BaseItem("Splash Potion of Strength II", Material.SPLASH_POTION, new PotionData(PotionType.STRENGTH, false, true)));
+        registered.add(new BaseItem("Splash Potion of Poison", Material.SPLASH_POTION, new PotionData(PotionType.POISON, false, false)));
+        registered.add(new BaseItem("Splash Potion of Poison (Extended)", Material.SPLASH_POTION, new PotionData(PotionType.POISON, true, false)));
+        registered.add(new BaseItem("Splash Potion of Poison II", Material.SPLASH_POTION, new PotionData(PotionType.POISON, false, true)));
+        registered.add(new BaseItem("Splash Potion of Weakness", Material.SPLASH_POTION, new PotionData(PotionType.WEAKNESS, false, false)));
+        registered.add(new BaseItem("Splash Potion of Weakness (Extended)", Material.SPLASH_POTION, new PotionData(PotionType.WEAKNESS, true, false)));
+        registered.add(new BaseItem("Splash Potion of Slowness", Material.SPLASH_POTION, new PotionData(PotionType.SLOWNESS, false, false)));
+        registered.add(new BaseItem("Splash Potion of Slowness (Extended)", Material.SPLASH_POTION, new PotionData(PotionType.SLOWNESS, true, false)));
+        registered.add(new BaseItem("Splash Potion of Water Breathing", Material.SPLASH_POTION, new PotionData(PotionType.WATER_BREATHING, false, false)));
+        registered.add(new BaseItem("Splash Potion of Water Breathing (Extended)", Material.SPLASH_POTION, new PotionData(PotionType.WATER_BREATHING, true, false)));
+        registered.add(new BaseItem("Splash Potion of Leaping", Material.SPLASH_POTION, new PotionData(PotionType.JUMP, false, false)));
+        registered.add(new BaseItem("Splash Potion of Leaping (Extended)", Material.SPLASH_POTION, new PotionData(PotionType.JUMP, true, false)));
+        registered.add(new BaseItem("Splash Potion of Leaping II", Material.SPLASH_POTION, new PotionData(PotionType.JUMP, false, true)));
     }
 
     public static Optional<BaseItem> find(String name) {
