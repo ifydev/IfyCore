@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>IfyCore-Spigot</artifactId>
-    <version>1.1.1</version>
+    <version>1.1.2</version>
 
     <parent>
         <groupId>me.ifydev</groupId>
@@ -22,7 +22,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.12.2-R0.1-SNAPSHOT</version>
+            <version>1.13-R0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>me.ifydev</groupId>
