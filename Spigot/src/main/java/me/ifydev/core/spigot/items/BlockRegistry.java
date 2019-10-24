@@ -692,7 +692,7 @@ public class BlockRegistry {
         registered.add(new BaseItem("Cactus Green", Material.GREEN_DYE));
         registered.add(new BaseItem("Green Dye", Material.GREEN_DYE));
 
-        registered.add(new BaseItem("Coco Beans", Material.COCOA_BEANS));
+        registered.add(new BaseItem("Cocoa Beans", Material.COCOA_BEANS));
         registered.add(new BaseItem("Lapis Lazuli", Material.LAPIS_LAZULI));
         registered.add(new BaseItem("Purple Dye", Material.PURPLE_DYE));
         registered.add(new BaseItem("Cyan Dye", Material.CYAN_DYE));
