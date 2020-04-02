@@ -86,10 +86,8 @@ public class BlockRegistry {
         registered.add(new BaseItem("Piston", Material.PISTON));
         registered.add(new BaseItem("Sticky Piston", Material.STICKY_PISTON));
         registered.add(new BaseItem("Cobweb", Material.COBWEB));
-
         registered.add(new BaseItem("Dead Bush", Material.DEAD_BUSH));
         registered.add(new BaseItem("Dead Shrub", Material.DEAD_BUSH));
-
         registered.add(new BaseItem("Tall Grass", Material.GRASS));
         registered.add(new BaseItem("Fern", Material.FERN));
         registered.add(new BaseItem("White Wool", Material.WHITE_WOOL));
@@ -214,13 +212,11 @@ public class BlockRegistry {
         registered.add(new BaseItem("Bamboo", Material.BAMBOO));
         registered.add(new BaseItem("Suspicious Stew", Material.SUSPICIOUS_STEW));
         registered.add(new BaseItem("Bamboo Sapling", Material.BAMBOO_SAPLING));
-
         registered.add(new BaseItem("Chest", Material.CHEST));
         registered.add(new BaseItem("Diamond Ore", Material.DIAMOND_ORE));
         registered.add(new BaseItem("Crafting Table", Material.CRAFTING_TABLE));
         registered.add(new BaseItem("Farmland", Material.FARMLAND));
         registered.add(new BaseItem("Furnace", Material.FURNACE));
-
         registered.add(new BaseItem("Acaica Sign", Material.ACACIA_SIGN));
         registered.add(new BaseItem("Birch Sign", Material.BIRCH_SIGN));
         registered.add(new BaseItem("Dark Oak Sign", Material.DARK_OAK_SIGN));
@@ -228,7 +224,6 @@ public class BlockRegistry {
         registered.add(new BaseItem("Oak Sign", Material.OAK_SIGN));
         registered.add(new BaseItem("Spruce Sign", Material.SPRUCE_SIGN));
         registered.add(new BaseItem("Sign", Material.OAK_SIGN));
-
         registered.add(new BaseItem("Oak Door", Material.OAK_DOOR));
         registered.add(new BaseItem("Birch Door", Material.BIRCH_DOOR));
         registered.add(new BaseItem("Dark Oak Door", Material.DARK_OAK_DOOR));
@@ -291,20 +286,17 @@ public class BlockRegistry {
         registered.add(new BaseItem("Green Stained Glass", Material.GREEN_STAINED_GLASS));
         registered.add(new BaseItem("Red Stained Glass", Material.RED_STAINED_GLASS));
         registered.add(new BaseItem("Black Stained Glass", Material.BLACK_STAINED_GLASS));
-
         registered.add(new BaseItem("Stone Monster Egg", Material.INFESTED_STONE));
         registered.add(new BaseItem("Cobblestone Monster Egg", Material.INFESTED_COBBLESTONE));
         registered.add(new BaseItem("Stone Brick Monster Egg", Material.INFESTED_STONE_BRICKS));
         registered.add(new BaseItem("Mossy Stone Brick Monster Egg", Material.INFESTED_MOSSY_STONE_BRICKS));
         registered.add(new BaseItem("Cracked Stone Brick Monster Egg", Material.INFESTED_CRACKED_STONE_BRICKS));
-
         registered.add(new BaseItem("Infested Stone", Material.INFESTED_STONE));
         registered.add(new BaseItem("Infested Cobblestone", Material.INFESTED_COBBLESTONE));
         registered.add(new BaseItem("Infested Stone Brick", Material.INFESTED_STONE_BRICKS));
         registered.add(new BaseItem("Infested Mossy Stone Brick", Material.INFESTED_MOSSY_STONE_BRICKS));
         registered.add(new BaseItem("Infested Cracked Stone Brick", Material.INFESTED_CRACKED_STONE_BRICKS));
         registered.add(new BaseItem("Infested Chiseled Stone Brick", Material.INFESTED_CHISELED_STONE_BRICKS));
-
         registered.add(new BaseItem("Stone Brick", Material.STONE_BRICKS));
         registered.add(new BaseItem("Mossy Stone Brick", Material.MOSSY_STONE_BRICKS));
         registered.add(new BaseItem("Cracked Stone Brick", Material.CRACKED_STONE_BRICKS));
@@ -416,7 +408,6 @@ public class BlockRegistry {
         registered.add(new BaseItem("Red Terracotta", Material.RED_TERRACOTTA));
         registered.add(new BaseItem("Black Stained Clay", Material.BLACK_TERRACOTTA));
         registered.add(new BaseItem("Black Terracotta", Material.BLACK_TERRACOTTA));
-
         registered.add(new BaseItem("Leaves", Material.OAK_LEAVES));
         registered.add(new BaseItem("Acacia Leaves", Material.ACACIA_LEAVES));
         registered.add(new BaseItem("Birch Leaves", Material.BIRCH_LEAVES));
@@ -424,35 +415,30 @@ public class BlockRegistry {
         registered.add(new BaseItem("Jungle Leaves", Material.JUNGLE_LEAVES));
         registered.add(new BaseItem("Oak Leaves", Material.OAK_LEAVES));
         registered.add(new BaseItem("Spruce Leaves", Material.SPRUCE_LEAVES));
-
         registered.add(new BaseItem("Acacia Log", Material.ACACIA_LOG));
         registered.add(new BaseItem("Birch Log", Material.BIRCH_LOG));
         registered.add(new BaseItem("Dark Oak Log", Material.DARK_OAK_LOG));
         registered.add(new BaseItem("Jungle Log", Material.JUNGLE_LOG));
         registered.add(new BaseItem("Oak Log", Material.OAK_LOG));
         registered.add(new BaseItem("Spruce Log", Material.SPRUCE_LOG));
-
         registered.add(new BaseItem("Stripped Acacia Log", Material.STRIPPED_ACACIA_LOG));
         registered.add(new BaseItem("Stripped Birch Log", Material.STRIPPED_BIRCH_LOG));
         registered.add(new BaseItem("Stripped Dark Oak Log", Material.STRIPPED_DARK_OAK_LOG));
         registered.add(new BaseItem("Stripped Jungle Log", Material.STRIPPED_JUNGLE_LOG));
         registered.add(new BaseItem("Stripped Oak Log", Material.STRIPPED_OAK_LOG));
         registered.add(new BaseItem("Stripped Spruce Log", Material.STRIPPED_SPRUCE_LOG));
-
         registered.add(new BaseItem("Stripped Acacia Wood", Material.STRIPPED_ACACIA_WOOD));
         registered.add(new BaseItem("Stripped Birch Wood", Material.STRIPPED_BIRCH_WOOD));
         registered.add(new BaseItem("Stripped Dark Oak Wood", Material.STRIPPED_DARK_OAK_WOOD));
         registered.add(new BaseItem("Stripped Jungle Wood", Material.STRIPPED_JUNGLE_WOOD));
         registered.add(new BaseItem("Stripped Oak Wood", Material.STRIPPED_OAK_WOOD));
         registered.add(new BaseItem("Stripped Spruce Wood", Material.STRIPPED_SPRUCE_WOOD));
-
         registered.add(new BaseItem("Acacia Trapdoor", Material.ACACIA_TRAPDOOR));
         registered.add(new BaseItem("Birch Trapdoor", Material.BIRCH_TRAPDOOR));
         registered.add(new BaseItem("Dark Oak Trapdoor", Material.DARK_OAK_TRAPDOOR));
         registered.add(new BaseItem("Jungle Trapdoor", Material.JUNGLE_TRAPDOOR));
         registered.add(new BaseItem("Oak Trapdoor", Material.OAK_TRAPDOOR));
         registered.add(new BaseItem("Spruce Trapdoor", Material.SPRUCE_TRAPDOOR));
-
         registered.add(new BaseItem("Slime Block", Material.SLIME_BLOCK));
         registered.add(new BaseItem("Barrier", Material.BARRIER));
         registered.add(new BaseItem("Iron Trapdoor", Material.IRON_TRAPDOOR));
@@ -583,7 +569,6 @@ public class BlockRegistry {
         registered.add(new BaseItem("Red Concrete Powder", Material.RED_CONCRETE_POWDER));
         registered.add(new BaseItem("Black Concrete Powder", Material.BLACK_CONCRETE_POWDER));
         registered.add(new BaseItem("Structure Block", Material.STRUCTURE_BLOCK));
-
         registered.add(new BaseItem("Iron Shovel", Material.IRON_SHOVEL));
         registered.add(new BaseItem("Iron Pickaxe", Material.IRON_PICKAXE));
         registered.add(new BaseItem("Iron Axe", Material.IRON_AXE));
@@ -676,7 +661,6 @@ public class BlockRegistry {
         registered.add(new BaseItem("Fishing Rod", Material.FISHING_ROD));
         registered.add(new BaseItem("Clock", Material.CLOCK));
         registered.add(new BaseItem("Glowstone Dust", Material.GLOWSTONE_DUST));
-
         registered.add(new BaseItem("Raw Cod", Material.COD));
         registered.add(new BaseItem("Raw Salmon", Material.SALMON));
         registered.add(new BaseItem("Tropical Fish", Material.TROPICAL_FISH));
@@ -685,13 +669,11 @@ public class BlockRegistry {
         registered.add(new BaseItem("Cooked Salmon", Material.COOKED_SALMON));
         registered.add(new BaseItem("Dried Kelp", Material.DRIED_KELP));
         registered.add(new BaseItem("Kelp", Material.KELP));
-
         registered.add(new BaseItem("Ink Sac", Material.INK_SAC));
         registered.add(new BaseItem("Rose Red", Material.RED_DYE));
         registered.add(new BaseItem("Red Dye", Material.RED_DYE));
         registered.add(new BaseItem("Cactus Green", Material.GREEN_DYE));
         registered.add(new BaseItem("Green Dye", Material.GREEN_DYE));
-
         registered.add(new BaseItem("Cocoa Beans", Material.COCOA_BEANS));
         registered.add(new BaseItem("Lapis Lazuli", Material.LAPIS_LAZULI));
         registered.add(new BaseItem("Purple Dye", Material.PURPLE_DYE));
@@ -935,6 +917,13 @@ public class BlockRegistry {
         registered.add(new BaseItem("Turtle Spawn Egg", Material.TURTLE_SPAWN_EGG));
         registered.add(new BaseItem("Wood Pickaxe", Material.WOODEN_PICKAXE));
         registered.add(new BaseItem("Wood Shovel", Material.WOODEN_SHOVEL));
+        registered.add(new BaseItem("Beehive", Material.BEEHIVE));
+        registered.add(new BaseItem("Bee Nest", Material.BEE_NEST));
+        registered.add(new BaseItem("Honey Block", Material.HONEY_BLOCK));
+        registered.add(new BaseItem("Honycomb Block", Material.HONEYCOMB_BLOCK));
+        registered.add(new BaseItem("Honey Bottle", Material.HONEY_BOTTLE));
+        registered.add(new BaseItem("Honeycomb", Material.HONEYCOMB));
+        registered.add(new BaseItem("Bee spawn egg", Material.BEE_SPAWN_EGG));
 
         registered.add(new BaseItem("Potion", Material.POTION, new PotionData(PotionType.WATER, false, false)));
         registered.add(new BaseItem("Awkward Potion", Material.POTION, new PotionData(PotionType.AWKWARD, false, false)));
@@ -964,7 +953,6 @@ public class BlockRegistry {
         registered.add(new BaseItem("Potion of Slowness (Extended)", Material.POTION, new PotionData(PotionType.SLOWNESS, true, false)));
         registered.add(new BaseItem("Potion of Harming", Material.POTION, new PotionData(PotionType.INSTANT_DAMAGE, false, false)));
         registered.add(new BaseItem("Potion of Harming II", Material.POTION, new PotionData(PotionType.INSTANT_DAMAGE, false, true)));
-
         registered.add(new BaseItem("Splash Potion", Material.SPLASH_POTION));
         registered.add(new BaseItem("Splash Mundane Potion", Material.SPLASH_POTION, new PotionData(PotionType.MUNDANE, false, false)));
         registered.add(new BaseItem("Lingering Potion", Material.LINGERING_POTION));
