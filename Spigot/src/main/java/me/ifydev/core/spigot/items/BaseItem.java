@@ -29,6 +29,8 @@ public class BaseItem {
 
         if (potionData != null) {
             PotionMeta meta = (PotionMeta) stack.getItemMeta();
+            if (meta == null) return null;
+
             meta.setBasePotionData(potionData);
             stack.setItemMeta(meta);
         }
