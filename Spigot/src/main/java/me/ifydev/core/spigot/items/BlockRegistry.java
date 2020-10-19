@@ -733,7 +733,11 @@ public class BlockRegistry {
         registered.add(new BaseItem("Spawn Zombie", Material.ZOMBIE_SPAWN_EGG));
         registered.add(new BaseItem("Spawn Slime", Material.SLIME_SPAWN_EGG));
         registered.add(new BaseItem("Spawn Ghast", Material.GHAST_SPAWN_EGG));
-        registered.add(new BaseItem("Spawn Zombie Pigman", Material.ZOMBIE_PIGMAN_SPAWN_EGG));
+
+        // Duplicates because Minecraft is stupid AF
+        registered.add(new BaseItem("Spawn Zombie Pigman", Material.ZOMBIFIED_PIGLIN_SPAWN_EGG));
+        registered.add(new BaseItem("Spawn Zombified Piglin", Material.ZOMBIFIED_PIGLIN_SPAWN_EGG));
+
         registered.add(new BaseItem("Spawn Enderman", Material.ENDERMAN_SPAWN_EGG));
         registered.add(new BaseItem("Spawn Cave Spider", Material.CAVE_SPIDER_SPAWN_EGG));
         registered.add(new BaseItem("Spawn Silverfish", Material.SILVERFISH_SPAWN_EGG));
@@ -836,6 +840,7 @@ public class BlockRegistry {
         registered.add(new BaseItem("Disc Ward", Material.MUSIC_DISC_WARD));
         registered.add(new BaseItem("Disc 11", Material.MUSIC_DISC_11));
         registered.add(new BaseItem("Disc Wait", Material.MUSIC_DISC_WAIT));
+        registered.add(new BaseItem("Disc Pigstep", Material.MUSIC_DISC_PIGSTEP));
         registered.add(new BaseItem("Brain Coral", Material.BRAIN_CORAL));
         registered.add(new BaseItem("Brain Coral Block", Material.BRAIN_CORAL));
         registered.add(new BaseItem("Brain Coral Fan", Material.BRAIN_CORAL_FAN));
@@ -924,6 +929,53 @@ public class BlockRegistry {
         registered.add(new BaseItem("Honey Bottle", Material.HONEY_BOTTLE));
         registered.add(new BaseItem("Honeycomb", Material.HONEYCOMB));
         registered.add(new BaseItem("Bee spawn egg", Material.BEE_SPAWN_EGG));
+        registered.add(new BaseItem("Ancient Debris", Material.ANCIENT_DEBRIS));
+        registered.add(new BaseItem("Basalt", Material.BASALT));
+        registered.add(new BaseItem("Blackstone", Material.BLACKSTONE));
+        registered.add(new BaseItem("Netherite Block", Material.NETHERITE_BLOCK));
+        registered.add(new BaseItem("Chain", Material.CHAIN));
+        registered.add(new BaseItem("Chiseled Nether Bricks", Material.CHISELED_NETHER_BRICKS));
+        registered.add(new BaseItem("Cracked Nether Bricks", Material.CRACKED_NETHER_BRICKS));
+        registered.add(new BaseItem("Crimson Fungus", Material.CRIMSON_FUNGUS));
+        registered.add(new BaseItem("Warped Fungus", Material.WARPED_FUNGUS));
+        registered.add(new BaseItem("Crimson Nylium", Material.CRIMSON_NYLIUM));
+        registered.add(new BaseItem("Warped Nylium", Material.WARPED_NYLIUM));
+        registered.add(new BaseItem("Crimson Planks", Material.CRIMSON_PLANKS));
+        registered.add(new BaseItem("Warped Planks", Material.WARPED_PLANKS));
+        registered.add(new BaseItem("Crimson Roots", Material.CRIMSON_ROOTS));
+        registered.add(new BaseItem("Warped Roots", Material.WARPED_ROOTS));
+        registered.add(new BaseItem("Crimson Stem", Material.CRIMSON_STEM));
+        registered.add(new BaseItem("Warped Stem", Material.WARPED_STEM));
+        registered.add(new BaseItem("Crying Obsidian", Material.CRYING_OBSIDIAN));
+        registered.add(new BaseItem("Gilded Blackstone", Material.GILDED_BLACKSTONE));
+        registered.add(new BaseItem("Hyphae", Material.CRIMSON_HYPHAE));
+        registered.add(new BaseItem("Lodestone", Material.LODESTONE));
+        registered.add(new BaseItem("Nether gold ore", Material.NETHER_GOLD_ORE));
+        registered.add(new BaseItem("Nether sprouts", Material.NETHER_SPROUTS));
+        registered.add(new BaseItem("Quartz Bricks", Material.QUARTZ_BRICKS));
+        registered.add(new BaseItem("Respawn Anchor", Material.RESPAWN_ANCHOR));
+        registered.add(new BaseItem("Shroomlight", Material.SHROOMLIGHT));
+        registered.add(new BaseItem("Soul campfire", Material.SOUL_CAMPFIRE));
+        registered.add(new BaseItem("Soul Lantern", Material.SOUL_LANTERN));
+        registered.add(new BaseItem("Soul Torch", Material.SOUL_TORCH));
+        registered.add(new BaseItem("Soul soil", Material.SOUL_SOIL));
+        registered.add(new BaseItem("Target", Material.TARGET));
+        registered.add(new BaseItem("Twisting vines", Material.TWISTING_VINES));
+        registered.add(new BaseItem("Warped wart block", Material.WARPED_WART_BLOCK));
+        registered.add(new BaseItem("Weeping vines", Material.WEEPING_VINES));
+        registered.add(new BaseItem("Netherite Helmet", Material.NETHERITE_HELMET));
+        registered.add(new BaseItem("Netherite Chestplate", Material.NETHERITE_CHESTPLATE));
+        registered.add(new BaseItem("Netherite Leggings", Material.NETHERITE_LEGGINGS));
+        registered.add(new BaseItem("Netherite Boots", Material.NETHERITE_BOOTS));
+        registered.add(new BaseItem("Netherite Axe", Material.NETHERITE_AXE));
+        registered.add(new BaseItem("Netherite Pickaxe", Material.NETHERITE_PICKAXE));
+        registered.add(new BaseItem("Netherite Shovel", Material.NETHERITE_SHOVEL));
+        registered.add(new BaseItem("Netherite Sword", Material.NETHERITE_SWORD));
+        registered.add(new BaseItem("Netherite Ingot", Material.NETHERITE_INGOT));
+        registered.add(new BaseItem("Hoglin Spawn Egg", Material.HOGLIN_SPAWN_EGG));
+        registered.add(new BaseItem("Piglin Spawn Egg", Material.PIGLIN_SPAWN_EGG));
+        registered.add(new BaseItem("Strider Spawn Egg", Material.STRIDER_SPAWN_EGG));
+        registered.add(new BaseItem("Warped Fungus on a stick", Material.WARPED_FUNGUS_ON_A_STICK));
 
         registered.add(new BaseItem("Potion", Material.POTION, new PotionData(PotionType.WATER, false, false)));
         registered.add(new BaseItem("Awkward Potion", Material.POTION, new PotionData(PotionType.AWKWARD, false, false)));

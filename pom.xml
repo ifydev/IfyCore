@@ -12,6 +12,7 @@
     <modules>
         <module>API</module>
         <module>Spigot</module>
+        <module>Test</module>
     </modules>
 
     <dependencies>
