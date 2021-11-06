@@ -867,6 +867,7 @@ public class BlockRegistry {
         registered.add(new BaseItem("Disc Ward", Material.MUSIC_DISC_WARD));
         registered.add(new BaseItem("Disc 11", Material.MUSIC_DISC_11));
         registered.add(new BaseItem("Disc Wait", Material.MUSIC_DISC_WAIT));
+        registered.add(new BaseItem("Disc Pigstep", Material.MUSIC_DISC_PIGSTEP));
         registered.add(new BaseItem("Brain Coral", Material.BRAIN_CORAL));
         registered.add(new BaseItem("Brain Coral Block", Material.BRAIN_CORAL));
         registered.add(new BaseItem("Brain Coral Fan", Material.BRAIN_CORAL_FAN));
