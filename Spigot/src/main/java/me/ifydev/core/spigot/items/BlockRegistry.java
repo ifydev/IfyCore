@@ -49,13 +49,26 @@ public class BlockRegistry {
         registered.add(new BaseItem("Sand", Material.SAND));
         registered.add(new BaseItem("Red Sand", Material.RED_SAND));
         registered.add(new BaseItem("Gravel", Material.GRAVEL));
+
+        registered.add(new BaseItem("Dripstone Block", Material.DRIPSTONE_BLOCK));
+        registered.add(new BaseItem("Pointed Dripstone", Material.POINTED_DRIPSTONE));
+        registered.add(new BaseItem("Raw Iron Block", Material.RAW_IRON_BLOCK));
+        registered.add(new BaseItem("Raw Copper Block", Material.RAW_COPPER_BLOCK));
+        registered.add(new BaseItem("Raw Gold Block", Material.RAW_GOLD_BLOCK));
+        registered.add(new BaseItem("Candle", Material.CANDLE));
+        registered.add(new BaseItem("Deepslate", Material.DEEPSLATE));
+        registered.add(new BaseItem("Cobbled Deepslate", Material.COBBLED_DEEPSLATE));
+        registered.add(new BaseItem("Polished Deepslate", Material.POLISHED_DEEPSLATE));
+
         registered.add(new BaseItem("Gold Ore", Material.GOLD_ORE));
+        registered.add(new BaseItem("Raw Gold", Material.RAW_GOLD));
         registered.add(new BaseItem("Iron Ore", Material.IRON_ORE));
+        registered.add(new BaseItem("Raw Iron", Material.RAW_IRON));
         registered.add(new BaseItem("Coal Ore", Material.COAL_ORE));
+
         registered.add(new BaseItem("Lapis Lazuli Ore", Material.LAPIS_ORE));
         registered.add(new BaseItem("Sponge", Material.SPONGE));
         registered.add(new BaseItem("Wet Sponge", Material.WET_SPONGE));
-        registered.add(new BaseItem("Glass", Material.GLASS));
         registered.add(new BaseItem("Lapis Lazuli Block", Material.LAPIS_BLOCK));
         registered.add(new BaseItem("Dispenser", Material.DISPENSER));
         registered.add(new BaseItem("Sandstone", Material.SANDSTONE));
@@ -270,6 +283,10 @@ public class BlockRegistry {
         registered.add(new BaseItem("Jack-O-Lantern", Material.JACK_O_LANTERN));
         registered.add(new BaseItem("Cake", Material.CAKE));
         registered.add(new BaseItem("Redstone Repeater", Material.REPEATER));
+
+        registered.add(new BaseItem("Glass", Material.GLASS));
+        registered.add(new BaseItem("Tinted Glass", Material.TINTED_GLASS));
+
         registered.add(new BaseItem("White Stained Glass", Material.WHITE_STAINED_GLASS));
         registered.add(new BaseItem("Orange Stained Glass", Material.ORANGE_STAINED_GLASS));
         registered.add(new BaseItem("Magenta Stained Glass", Material.MAGENTA_STAINED_GLASS));
@@ -286,6 +303,25 @@ public class BlockRegistry {
         registered.add(new BaseItem("Green Stained Glass", Material.GREEN_STAINED_GLASS));
         registered.add(new BaseItem("Red Stained Glass", Material.RED_STAINED_GLASS));
         registered.add(new BaseItem("Black Stained Glass", Material.BLACK_STAINED_GLASS));
+
+        registered.add(new BaseItem("Glass Pane", Material.GLASS_PANE));
+        registered.add(new BaseItem("White Stained Glass Pane", Material.WHITE_STAINED_GLASS_PANE));
+        registered.add(new BaseItem("Orange Stained Glass Pane", Material.ORANGE_STAINED_GLASS_PANE));
+        registered.add(new BaseItem("Magenta Stained Glass Pane", Material.MAGENTA_STAINED_GLASS_PANE));
+        registered.add(new BaseItem("Light Blue Stained Glass Pane", Material.LIGHT_BLUE_STAINED_GLASS_PANE));
+        registered.add(new BaseItem("Yellow Stained Glass Pane", Material.YELLOW_STAINED_GLASS_PANE));
+        registered.add(new BaseItem("Lime Stained Glass Pane", Material.LIME_STAINED_GLASS_PANE));
+        registered.add(new BaseItem("Pink Stained Glass Pane", Material.PINK_STAINED_GLASS_PANE));
+        registered.add(new BaseItem("Gray Stained Glass Pane", Material.GRAY_STAINED_GLASS_PANE));
+        registered.add(new BaseItem("Light Gray Stained Glass Pane", Material.LIGHT_GRAY_STAINED_GLASS_PANE));
+        registered.add(new BaseItem("Cyan Stained Glass Pane", Material.CYAN_STAINED_GLASS_PANE));
+        registered.add(new BaseItem("Purple Stained Glass Pane", Material.PURPLE_STAINED_GLASS_PANE));
+        registered.add(new BaseItem("Blue Stained Glass Pane", Material.BLUE_STAINED_GLASS_PANE));
+        registered.add(new BaseItem("Brown Stained Glass Pane", Material.BROWN_STAINED_GLASS_PANE));
+        registered.add(new BaseItem("Green Stained Glass Pane", Material.GREEN_STAINED_GLASS_PANE));
+        registered.add(new BaseItem("Black Stained Glass Pane", Material.BLACK_STAINED_GLASS_PANE));
+        registered.add(new BaseItem("Red Stained Glass Pane", Material.RED_STAINED_GLASS_PANE));
+
         registered.add(new BaseItem("Stone Monster Egg", Material.INFESTED_STONE));
         registered.add(new BaseItem("Cobblestone Monster Egg", Material.INFESTED_COBBLESTONE));
         registered.add(new BaseItem("Stone Brick Monster Egg", Material.INFESTED_STONE_BRICKS));
@@ -303,22 +339,6 @@ public class BlockRegistry {
         registered.add(new BaseItem("Chiseled Stone Brick", Material.CHISELED_STONE_BRICKS));
         registered.add(new BaseItem("Brown Mushroom Block", Material.BROWN_MUSHROOM_BLOCK));
         registered.add(new BaseItem("Red Mushroom Block", Material.RED_MUSHROOM_BLOCK));
-        registered.add(new BaseItem("Glass Pane", Material.GLASS_PANE));
-        registered.add(new BaseItem("White Stained Glass Pane", Material.WHITE_STAINED_GLASS_PANE));
-        registered.add(new BaseItem("Orange Stained Glass Pane", Material.ORANGE_STAINED_GLASS_PANE));
-        registered.add(new BaseItem("Magenta Stained Glass Pane", Material.MAGENTA_STAINED_GLASS_PANE));
-        registered.add(new BaseItem("Light Blue Stained Glass Pane", Material.LIGHT_BLUE_STAINED_GLASS_PANE));
-        registered.add(new BaseItem("Yellow Stained Glass Pane", Material.YELLOW_STAINED_GLASS_PANE));
-        registered.add(new BaseItem("Lime Stained Glass Pane", Material.LIME_STAINED_GLASS_PANE));
-        registered.add(new BaseItem("Pink Stained Glass Pane", Material.PINK_STAINED_GLASS_PANE));
-        registered.add(new BaseItem("Gray Stained Glass Pane", Material.GRAY_STAINED_GLASS_PANE));
-        registered.add(new BaseItem("Light Gray Stained Glass Pane", Material.LIGHT_GRAY_STAINED_GLASS_PANE));
-        registered.add(new BaseItem("Cyan Stained Glass Pane", Material.CYAN_STAINED_GLASS_PANE));
-        registered.add(new BaseItem("Purple Stained Glass Pane", Material.PURPLE_STAINED_GLASS_PANE));
-        registered.add(new BaseItem("Blue Stained Glass Pane", Material.BLUE_STAINED_GLASS_PANE));
-        registered.add(new BaseItem("Brown Stained Glass Pane", Material.BROWN_STAINED_GLASS_PANE));
-        registered.add(new BaseItem("Green Stained Glass Pane", Material.GREEN_STAINED_GLASS_PANE));
-        registered.add(new BaseItem("Black Stained Glass Pane", Material.BLACK_STAINED_GLASS_PANE));
         registered.add(new BaseItem("Melon Block", Material.MELON));
         registered.add(new BaseItem("Vines", Material.VINE));
         registered.add(new BaseItem("Oak Fence Gate", Material.OAK_FENCE_GATE));
@@ -495,7 +515,7 @@ public class BlockRegistry {
         registered.add(new BaseItem("Purpur Stairs", Material.PURPUR_STAIRS));
         registered.add(new BaseItem("Purpur Slab", Material.PURPUR_SLAB));
         registered.add(new BaseItem("End Stone Brick", Material.END_STONE_BRICKS));
-        registered.add(new BaseItem("Grass Path", Material.GRASS_PATH));
+        registered.add(new BaseItem("Grass Path", Material.DIRT_PATH));
         registered.add(new BaseItem("Repeating Command Block", Material.REPEATING_COMMAND_BLOCK));
         registered.add(new BaseItem("Chain Command Block", Material.CHAIN_COMMAND_BLOCK));
         registered.add(new BaseItem("Magma Block", Material.MAGMA_BLOCK));
@@ -733,7 +753,15 @@ public class BlockRegistry {
         registered.add(new BaseItem("Spawn Zombie", Material.ZOMBIE_SPAWN_EGG));
         registered.add(new BaseItem("Spawn Slime", Material.SLIME_SPAWN_EGG));
         registered.add(new BaseItem("Spawn Ghast", Material.GHAST_SPAWN_EGG));
-        registered.add(new BaseItem("Spawn Zombie Pigman", Material.ZOMBIE_PIGMAN_SPAWN_EGG));
+        registered.add(new BaseItem("Spawn Axolotl", Material.AXOLOTL_SPAWN_EGG));
+        registered.add(new BaseItem("Spawn Glow Squid", Material.GLOW_SQUID_SPAWN_EGG));
+        registered.add(new BaseItem("Spawn Goat", Material.GOAT_SPAWN_EGG));
+        registered.add(new BaseItem("Spyglass", Material.SPYGLASS));
+
+        // Duplicates because Minecraft is stupid AF
+        registered.add(new BaseItem("Spawn Zombie Pigman", Material.ZOMBIFIED_PIGLIN_SPAWN_EGG));
+        registered.add(new BaseItem("Spawn Zombified Piglin", Material.ZOMBIFIED_PIGLIN_SPAWN_EGG));
+
         registered.add(new BaseItem("Spawn Enderman", Material.ENDERMAN_SPAWN_EGG));
         registered.add(new BaseItem("Spawn Cave Spider", Material.CAVE_SPIDER_SPAWN_EGG));
         registered.add(new BaseItem("Spawn Silverfish", Material.SILVERFISH_SPAWN_EGG));
@@ -749,9 +777,12 @@ public class BlockRegistry {
         registered.add(new BaseItem("Spawn Cow", Material.COW_SPAWN_EGG));
         registered.add(new BaseItem("Spawn Chicken", Material.CHICKEN_SPAWN_EGG));
         registered.add(new BaseItem("Spawn Squid", Material.SQUID_SPAWN_EGG));
-        registered.add(new BaseItem("Spawn Wolf", Material.WOLF_SPAWN_EGG));
         registered.add(new BaseItem("Spawn Mooshroom", Material.MOOSHROOM_SPAWN_EGG));
+
+        registered.add(new BaseItem("Spawn Wolf", Material.WOLF_SPAWN_EGG));
         registered.add(new BaseItem("Spawn Ocelot", Material.OCELOT_SPAWN_EGG));
+        registered.add(new BaseItem("Spawn Cat", Material.CAT_SPAWN_EGG));
+
         registered.add(new BaseItem("Spawn Horse", Material.HORSE_SPAWN_EGG));
         registered.add(new BaseItem("Spawn Rabbit", Material.RABBIT_SPAWN_EGG));
         registered.add(new BaseItem("Spawn Polar Bear", Material.POLAR_BEAR_SPAWN_EGG));
@@ -891,7 +922,6 @@ public class BlockRegistry {
         registered.add(new BaseItem("Quartz Pillar", Material.QUARTZ_PILLAR));
         registered.add(new BaseItem("Quartz", Material.QUARTZ));
         registered.add(new BaseItem("Rabbit Stew", Material.RABBIT_STEW));
-        registered.add(new BaseItem("Red Stained Glass Pane", Material.RED_STAINED_GLASS_PANE));
         registered.add(new BaseItem("Salmon Bucket", Material.SALMON_BUCKET));
         registered.add(new BaseItem("Salmon Spawn Egg", Material.SALMON_SPAWN_EGG));
         registered.add(new BaseItem("Wandering Trader Spawn Egg", Material.WANDERING_TRADER_SPAWN_EGG));
@@ -924,7 +954,53 @@ public class BlockRegistry {
         registered.add(new BaseItem("Honey Bottle", Material.HONEY_BOTTLE));
         registered.add(new BaseItem("Honeycomb", Material.HONEYCOMB));
         registered.add(new BaseItem("Bee spawn egg", Material.BEE_SPAWN_EGG));
-
+        registered.add(new BaseItem("Ancient Debris", Material.ANCIENT_DEBRIS));
+        registered.add(new BaseItem("Basalt", Material.BASALT));
+        registered.add(new BaseItem("Blackstone", Material.BLACKSTONE));
+        registered.add(new BaseItem("Netherite Block", Material.NETHERITE_BLOCK));
+        registered.add(new BaseItem("Chain", Material.CHAIN));
+        registered.add(new BaseItem("Chiseled Nether Bricks", Material.CHISELED_NETHER_BRICKS));
+        registered.add(new BaseItem("Cracked Nether Bricks", Material.CRACKED_NETHER_BRICKS));
+        registered.add(new BaseItem("Crimson Fungus", Material.CRIMSON_FUNGUS));
+        registered.add(new BaseItem("Warped Fungus", Material.WARPED_FUNGUS));
+        registered.add(new BaseItem("Crimson Nylium", Material.CRIMSON_NYLIUM));
+        registered.add(new BaseItem("Warped Nylium", Material.WARPED_NYLIUM));
+        registered.add(new BaseItem("Crimson Planks", Material.CRIMSON_PLANKS));
+        registered.add(new BaseItem("Warped Planks", Material.WARPED_PLANKS));
+        registered.add(new BaseItem("Crimson Roots", Material.CRIMSON_ROOTS));
+        registered.add(new BaseItem("Warped Roots", Material.WARPED_ROOTS));
+        registered.add(new BaseItem("Crimson Stem", Material.CRIMSON_STEM));
+        registered.add(new BaseItem("Warped Stem", Material.WARPED_STEM));
+        registered.add(new BaseItem("Crying Obsidian", Material.CRYING_OBSIDIAN));
+        registered.add(new BaseItem("Gilded Blackstone", Material.GILDED_BLACKSTONE));
+        registered.add(new BaseItem("Hyphae", Material.CRIMSON_HYPHAE));
+        registered.add(new BaseItem("Lodestone", Material.LODESTONE));
+        registered.add(new BaseItem("Nether Gold Ore", Material.NETHER_GOLD_ORE));
+        registered.add(new BaseItem("Nether sprouts", Material.NETHER_SPROUTS));
+        registered.add(new BaseItem("Quartz Bricks", Material.QUARTZ_BRICKS));
+        registered.add(new BaseItem("Respawn Anchor", Material.RESPAWN_ANCHOR));
+        registered.add(new BaseItem("Shroomlight", Material.SHROOMLIGHT));
+        registered.add(new BaseItem("Soul Campfire", Material.SOUL_CAMPFIRE));
+        registered.add(new BaseItem("Soul Lantern", Material.SOUL_LANTERN));
+        registered.add(new BaseItem("Soul Torch", Material.SOUL_TORCH));
+        registered.add(new BaseItem("Soul soil", Material.SOUL_SOIL));
+        registered.add(new BaseItem("Target", Material.TARGET));
+        registered.add(new BaseItem("Twisting vines", Material.TWISTING_VINES));
+        registered.add(new BaseItem("Warped wart block", Material.WARPED_WART_BLOCK));
+        registered.add(new BaseItem("Weeping vines", Material.WEEPING_VINES));
+        registered.add(new BaseItem("Netherite Helmet", Material.NETHERITE_HELMET));
+        registered.add(new BaseItem("Netherite Chestplate", Material.NETHERITE_CHESTPLATE));
+        registered.add(new BaseItem("Netherite Leggings", Material.NETHERITE_LEGGINGS));
+        registered.add(new BaseItem("Netherite Boots", Material.NETHERITE_BOOTS));
+        registered.add(new BaseItem("Netherite Axe", Material.NETHERITE_AXE));
+        registered.add(new BaseItem("Netherite Pickaxe", Material.NETHERITE_PICKAXE));
+        registered.add(new BaseItem("Netherite Shovel", Material.NETHERITE_SHOVEL));
+        registered.add(new BaseItem("Netherite Sword", Material.NETHERITE_SWORD));
+        registered.add(new BaseItem("Netherite Ingot", Material.NETHERITE_INGOT));
+        registered.add(new BaseItem("Hoglin Spawn Egg", Material.HOGLIN_SPAWN_EGG));
+        registered.add(new BaseItem("Piglin Spawn Egg", Material.PIGLIN_SPAWN_EGG));
+        registered.add(new BaseItem("Strider Spawn Egg", Material.STRIDER_SPAWN_EGG));
+        registered.add(new BaseItem("Warped Fungus on a stick", Material.WARPED_FUNGUS_ON_A_STICK));
         registered.add(new BaseItem("Potion", Material.POTION, new PotionData(PotionType.WATER, false, false)));
         registered.add(new BaseItem("Awkward Potion", Material.POTION, new PotionData(PotionType.AWKWARD, false, false)));
         registered.add(new BaseItem("Thick Potion", Material.POTION, new PotionData(PotionType.THICK, false, false)));
