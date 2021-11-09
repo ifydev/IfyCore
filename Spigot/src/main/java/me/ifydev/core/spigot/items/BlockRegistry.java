@@ -1016,6 +1016,7 @@ public class BlockRegistry {
         registered.add(new BaseItem("Potion of Fire Resistance (Extended)", Material.POTION, new PotionData(PotionType.FIRE_RESISTANCE, true, false)));
         registered.add(new BaseItem("Potion of Healing", Material.POTION, new PotionData(PotionType.INSTANT_HEAL, false, false)));
         registered.add(new BaseItem("Potion of Healing II", Material.POTION, new PotionData(PotionType.INSTANT_HEAL, false, true)));
+        registered.add(new BaseItem("Potion of Invisibility", Material.POTION, new PotionData(PotionType.INVISIBILITY, false, false)));
         registered.add(new BaseItem("Potion of Night Vision", Material.POTION, new PotionData(PotionType.NIGHT_VISION, false, false)));
         registered.add(new BaseItem("Potion of Night Vision (Extended)", Material.POTION, new PotionData(PotionType.NIGHT_VISION, true, false)));
         registered.add(new BaseItem("Potion of Strength", Material.POTION, new PotionData(PotionType.STRENGTH, false, false)));
@@ -1043,6 +1044,7 @@ public class BlockRegistry {
         registered.add(new BaseItem("Splash Potion of Fire Resistance (Extended)", Material.SPLASH_POTION, new PotionData(PotionType.FIRE_RESISTANCE, true, false)));
         registered.add(new BaseItem("Splash Potion of Healing", Material.SPLASH_POTION, new PotionData(PotionType.INSTANT_HEAL, false, false)));
         registered.add(new BaseItem("Splash Potion of Healing II", Material.SPLASH_POTION, new PotionData(PotionType.INSTANT_HEAL, false, true)));
+        registered.add(new BaseItem("Splash Potion of Invisibility", Material.SPLASH_POTION, new PotionData(PotionType.INVISIBILITY, false, false)));
         registered.add(new BaseItem("Splash Potion of Strength", Material.SPLASH_POTION, new PotionData(PotionType.STRENGTH, false, false)));
         registered.add(new BaseItem("Splash Potion of Strength (Extended)", Material.SPLASH_POTION, new PotionData(PotionType.STRENGTH, true, false)));
         registered.add(new BaseItem("Splash Potion of Strength II", Material.SPLASH_POTION, new PotionData(PotionType.STRENGTH, false, true)));
